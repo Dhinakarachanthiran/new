@@ -1,0 +1,163 @@
+.assign-project-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+
+
+.project-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status-badge.active {
+  background-color: #c6f6d5;
+  color: #1a202c;
+}
+
+.action-button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  background-color: #2d3748;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #4a5568;
+}
+
+.team-switcher {
+  margin-bottom: 20px;
+}
+
+.team-button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.team-button.selected {
+  background-color: #3182ce;
+  color: white;
+}
+
+.task-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter select {
+  padding: 5px;
+}
+
+.new-task-button {
+  padding: 5px 10px;
+  background-color: #48bb78;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-task-button:hover {
+  background-color: #38a169;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.task-table th, .task-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.task-table th {
+  background-color: #3182ce;
+  color: #ffffff;
+  text-align: left;
+}
+
+.team-switcher {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}
+
+.team-button {
+padding: 8px 15px;
+border: 1px solid #ddd;
+background-color: #f4f4f4;
+cursor: pointer;
+}
+
+.team-button.selected {
+background-color: #007bff;
+color: white;
+}
+
+.team-name-container {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.avatar {
+background-color: #e0e0e0;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.team-title {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.icon-button {
+  background: #f8f9fa; /* Light gray background */
+  border: none;
+  border-radius: 5px;
+  padding: 0px 7px 0px 7px;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+.icon-button i {
+  font-size: 16px;
+  color: #495057;
+}
+
+.icon-button:hover {
+  background: #e9ecef;
+}
+
+.Badge-lables{
+  padding: 3px;
+  margin: 7px 0px 5px 0px;
+}
+

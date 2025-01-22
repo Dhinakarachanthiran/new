@@ -1,0 +1,16 @@
+.ag-theme-alpine .ag-paging-panel {
+  position: sticky;
+  bottom: 0;      
+  background-color: white;
+  z-index: 10;    
+}
+ 
+.ag-theme-alpine .ag-header-cell-label {
+  justify-content: left;
+}
+.ag-theme-alpine .ag-cell {
+  text-align: left;
+}
+.icon-button {
+  justify-content: start;
+}  

@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e0e4fd;
+  letter-spacing: normal;
+}
+
+.timesheet-header {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e4e8;
+}
+ 
+.timesheet-header h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.task-addition {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.task-addition button {
+  background-color: #ced0d1;
+  color: black;
+  padding: 5px 15px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #00A6ED;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
+ 
+#timeoff{
+  margin-left:775px;  
+  margin-right: 20px;
+  background-color: #ced0d1;
+  color: black;
+  padding: 5px 15px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  table-layout: fixed;
+}
+
+.timesheet-table thead th,
+.timesheet-table tfoot td {
+  position: sticky; 
+  z-index: 2;
+  text-align: center;
+  padding-left: 0%;
+  background-color: #EDF2F7;
+}
+
+.timesheet-table thead th {
+  top: 0; 
+}
+
+.timesheet-table tfoot td {
+  bottom: 0; 
+}
+ 
+.timesheet-table tbody {
+  display: block;
+  max-height: 350px; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  width: 100%;
+}
+
+.timesheet-table thead,
+.timesheet-table tfoot {
+  display: table; 
+  width: 100%; 
+  table-layout: fixed; 
+}
+
+.timesheet-table tbody tr {
+  display: table;
+  width: 100%; 
+  table-layout: fixed;
+}
+
+.timesheet-table tbody tr:hover {
+  background-color: #F7F9FD;
+  cursor: pointer;
+}
+ 
+#col1{
+  position: relative;
+}
+
+.task-wrapper {
+  display: flex;
+}
+.project-legend {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-legend div {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+ 
+.task-name {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 200;
+}
+ 
+.timesheet-table td {
+  border-bottom: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+ 
+.timesheet-table th {
+  border-bottom: 1px solid #ddd;
+  color: #0e0d0d;
+  margin-bottom: 10px;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+ 
+.timesheet-table td input[type="number"] {
+  width: 50px;
+  padding: 2px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
+}
+ 
+.timesheet-table td button {
+  background: #f7f9fd;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+ 
+.timesheet-table td button:hover {
+  background: #e9ecef;
+}
+ 
+tfoot td {
+  font-weight: bold;
+  background-color: #ddd;
+}
+ 
+tfoot td button {
+  color: #fff;
+  padding: 3px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+
+.timesheet-table th, .timesheet-table td {
+  padding: 2px 5px;
+}
+ 
+#savedraft {
+  background-color: #ced0d1;
+  color: black;
+  font-weight: 600;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+  
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+ 
+.toast.success {
+  background-color: #28a745;
+  color: white;
+}
+ 
+.toast.error {
+  background-color: #dc3545; 
+  color: white;
+}
+ 
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+ 
+.progress-bar {
+  display: flex;
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+ 
+.progress-bar .progress {
+  height: 100%;
+}
+ 
+.progress-bar .progress.overtime {
+  margin-left: 0;
+  z-index: 1;
+}
+ 
+.progress-bar:hover::after {
+  content: attr(title);
+  position: absolute;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: -25px;
+  white-space: nowrap;
+  font-size: 12px;
+  pointer-events: none;
+}
+ 
+.progress {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+}
+ 
+.disabled-input {
+  background-color: #F7F9FD;
+  opacity: 0.5;
+}
+ 
+.progress-bar .progress.regular {
+  transition: width 0.3s ease;
+}
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+.addtaskmodal{
+  display: flex;
+}
+/* Add these styles to your existing Timesheet.css file */
+
+/* Main Form Styles */
+time-off-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between form groups */
+  max-width: 600px; /* Optional: set a max-width for better alignment */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between label and control */
+}
+
+.form-group label {
+  font-size: 0.875rem; /* Adjusted for better readability */
+  color: #666; /* Neutral gray color for labels */
+}
+
+/* Form Controls */
+.form-group .form-control {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  width: 100%; /* Ensure controls span the full width of the parent */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Date Range Grid */
+.date-range {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 1rem; /* Space between columns */
+}
+
+/* Disabled Form Control */
+.form-control:disabled {
+  background-color: #f5f5f5; /* Light gray background for disabled state */
+  cursor: not-allowed; /* Show disabled cursor */
+}
+
+/* Select Dropdown */
+select.form-control {
+  appearance: none; /* Remove default browser styling */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1em;
+  padding-right: 2rem; /* Space for dropdown arrow */
+}
+
+/* Button Alignment */
+.button-group {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 1rem; /* Space between buttons */
+}
+
+.button-group button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cancel Button */
+.button-group .btn-cancel {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.button-group .btn-cancel:hover {
+  background-color: #f0f0f0;
+}
+
+/* Save Button */
+.button-group .btn-save {
+  background-color: #007bff; /* Blue background */
+  color: white;
+}
+
+.button-group .btn-save:hover {
+  background-color: #0056b3;
+}

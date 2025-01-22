@@ -1,0 +1,63 @@
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 9999 !important;
+}
+
+.react-datepicker__header {
+  background-color: #f7fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.react-datepicker__day--selected {
+  background-color: #3182ce;
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #bee3f8;
+}
+
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 9999 !important;
+}
+
+.react-datepicker__header {
+  background-color: #f7fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.react-datepicker__day--selected {
+  background-color: #3182ce;
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #bee3f8;
+}
+
+.ag-theme-alpine .ag-paging-panel {
+  position: sticky; 
+  bottom: 0;       
+  background-color: white; 
+  z-index: 10;     
+}
+
+.ag-theme-alpine .ag-header-cell-label {
+  justify-content: left; 
+  font-size: 16px;
+}
+.ag-theme-alpine .ag-cell {
+  text-align: left; 
+}
+
+.Badge-lables{
+  padding: 3px;
+  margin: 7px 0px 5px 0px;
+}

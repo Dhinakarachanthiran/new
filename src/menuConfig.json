@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Main Dashboard",
+    "screenId": 101,
+    "layout": "/admin",
+    "path": "/default",
+    "icon": "MdHome",
+    "component": "MainDashboard",
+    "visibility": true
+  },
+  {
+    "name": "Timesheet",
+    "screenId": 102,
+    "layout": "/admin",
+    "path": "/Timesheet",
+    "icon": "MdOutlineCalendarToday",
+    "component": "Timesheet",
+    "visibility": true
+  },
+  {
+    "name": "Project Management",
+    "screenId": 103,
+    "layout": "/admin",
+    "path": "/ProjectManagement",
+    "icon": "MdOutlineFolderOpen",
+    "component": "ProjectManagement",
+    "visibility": true
+  },
+  {
+    "name": "User Management",
+    "screenId": 104,
+    "layout": "/admin",
+    "path": "/UserManagement",
+    "icon": "MdOutlineManageAccounts",
+    "component": "Usermanagement",
+    "visibility": true
+  },
+
+
+    {
+      "name": "Team Management",
+      "screenId": 105,
+      "layout": "/admin",
+      "path": "/TeamManagement",
+      "icon": "MdGroups",
+      "component": "TeamManagement",
+      "visibility": true
+    
+    },
+    {
+      "name": "Task Management",
+      "screenId": 106,
+      "layout": "/admin",
+      "path": "/Task",
+      "icon": "MdOutlineAssignmentTurnedIn",
+      "component": "Task",
+      "visibility": true
+     
+    },
+    {
+      "name": "Client Management",
+      "screenId": 108,
+      "layout": "/admin",
+      "path": "/ClientManagement",
+      "icon": "MdPeopleAlt",
+      "component": "ClientInfo",
+      "visibility": true
+    },
+    {
+      "name": "Settings",
+      "screenId": 107,
+      "layout": "/admin",
+      "path": "/Settings",
+      "icon": "MdSettings",
+      "component": "Settings",
+      "visibility": true
+     
+    },
+    {
+      "name": "Reports",
+      "screenId": 109,
+      "layout":"/admin",
+      "path":"/Reports",
+      "icon":"MdAssessment",
+      "component":"Reports",
+      "visibility":true
+    }
+  ]
+  

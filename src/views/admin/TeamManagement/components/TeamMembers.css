@@ -1,0 +1,391 @@
+.team-container {
+  font-family: 'inter', sans-serif;
+  padding: 20px;
+  border-spacing: 0;
+}
+
+.team-header {
+  display: flex;
+  align-items: left;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #EFF1F3 ; 
+  padding: 10px 0px 10px 0px;
+}
+
+.team-name {
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+}
+
+.manager{
+  display: flex;
+}
+
+.manager-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 'inter', sans-serif;
+  justify-content: space-between;
+}
+
+.manager-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.manager-label {
+  display: flex;
+  align-items: center;
+  background-color: #f5f7fa;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.manager-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #d1d9e6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 24 24'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E");
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.manager-name {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.addmemberbtn{
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+}
+
+.backbtn{
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+}
+
+
+.manager-section {
+  margin-bottom: 20px;
+}
+
+.manager-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.icon-button {
+  border: none;
+  background: none;
+  color: #140ca1;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  color: #007bff;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+.member-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.member-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.member-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.addmemberbtn {
+  margin-right: 10px;
+  padding: 5px 50px;
+  border: 1px solid #007bff;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.backbtn {
+  padding: 5px 10px;
+  border: 1px solid #6c757d;
+  background: #6c757d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 30px 0px 0px;
+}
+
+.popover {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 1000;
+}
+
+.popover-body {
+  padding: 16px;
+}
+
+.list-search-box {
+  margin-bottom: 8px;
+}
+
+.list-search {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.scrollable-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.popover-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-filter-value {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 14px;
+}
+
+.page-filter-value-title {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.page-filter-value-value {
+  display: flex;
+  align-items: center;
+}
+
+.icon-arrow {
+  margin-left: 8px;
+  width: 10px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.popover {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 1000;
+}
+
+.popover-body {
+  padding: 16px;
+}
+
+.list-search-box {
+  margin-bottom: 8px;
+}
+
+.list-search {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.scrollable-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.popover-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.multi-select-container {
+  position: relative;
+}
+
+.dropdown-trigger {
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  /* margin-right: 30px; */
+}
+
+.multi-select-dropdown {
+  position: absolute;
+  top: 100%;
+  /* left: 0px; */
+  right: 0px;
+  background: white;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dropdown-search {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.dropdown-list li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+.dropdown-list label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.member-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.dropdown-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.save-button {
+  background-color: #3965ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #6C757D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+
+
+
+
+
